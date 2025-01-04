@@ -1,12 +1,50 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-#nav-tag{
-    background-color: bisque;
-    height: 100px;
+#nav-section {
+  background-color: bisque;
+  height: 100px;
 }
-.nav-link{
-    position: relative;
-    left: 47%;
+
+.nav-link {
+  position: relative;
+  left: 40%;
 }
+
+#sec1_slogan {
+  background-color: aquamarine;
+  height: 500px;
+}
+
+#sec2_about_us {
+  background-color: blue;
+  height: 500px;
+}
+
+#sec3_services {
+  background-color: greenyellow;
+  height: 500px;
+}
+
+#sec4_free_creativity {
+  background-color: pink;
+  height: 500px;
+}
+
+#sec5_client_comments {
+  background-color: yellow;
+  height: 500px;
+}
+
+#sec6_contact_us {
+  background-color: brown;
+  height: 500px;
+}
+
+#additional_info {
+  background-color: palevioletred;
+  height: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */
