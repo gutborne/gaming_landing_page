@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+#nav-tag{
+    background-color: bisque;
+    height: 100px;
+}
+.nav-link{
+    position: relative;
+    left: 47%;
+}
