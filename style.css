@@ -3,7 +3,6 @@
 }
 
 #nav-section {
-  background-color: bisque;
   height: 100px;
 }
 
@@ -13,18 +12,24 @@
 }
 
 #sec1_slogan {
+  background-image: url(slogan1.jpg);
+  color: antiquewhite;
   background-color: aquamarine;
   height: 500px;
 }
 
 #sec2_about_us {
-  background-color: blue;
   height: 500px;
 }
 
 #sec3_services {
-  background-color: greenyellow;
   height: 500px;
+}
+
+#sec2-sec3 {
+  background-image: url(about_us.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #sec4_free_creativity {
@@ -33,6 +38,7 @@
 }
 
 #sec5_client_comments {
+  background-image: url(slogan2.jpg);
   background-color: yellow;
   height: 500px;
 }
