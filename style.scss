@@ -37,11 +37,14 @@ $std_sec_heigh: 500px;
     background-color: yellow;
     height: $std_sec_heigh;
 }
+#sec6-footer{
+    background-image: url(contact_us.jpg);
+    background-size: cover;
+    height: 100%;
+}
 #sec6_contact_us{
-    background-color: brown;
     height: $std_sec_heigh;
 }
 #additional_info{
-    background-color: palevioletred;
     height: $std_sec_heigh - 100px;
 }

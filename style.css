@@ -43,13 +43,17 @@
   height: 500px;
 }
 
+#sec6-footer {
+  background-image: url(contact_us.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
 #sec6_contact_us {
-  background-color: brown;
   height: 500px;
 }
 
 #additional_info {
-  background-color: palevioletred;
   height: 400px;
 }
 
