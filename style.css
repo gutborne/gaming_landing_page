@@ -4,11 +4,20 @@
 
 #nav-section {
   height: 100px;
+  background-color: rgb(83, 77, 77);
+}
+
+#page-logo {
+  position: relative;
+  top: 20px;
+  scale: 1.8 7;
 }
 
 .nav-link {
+  background-color: white;
   position: relative;
-  left: 40%;
+  left: 25%;
+  top: 40px;
 }
 
 #sec1_slogan {
