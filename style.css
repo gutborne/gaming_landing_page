@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  display: grid;
+  gap: 1vw;
+}
+
+#page_header {
+  display: flex;
+  position: sticky;
+  width: 100%;
+  background-color: brown;
+  align-items: center;
+}
+
+#page-logo {
+  position: relative;
+  object-fit: fill;
+  aspect-ratio: 63/27;
+  width: auto;
+  height: clamp(80px, 7vw, 200px);
+  left: 0px;
+  margin: 10px 0px 10px 10px;
+}
+
+#nav-section {
+  position: relative;
+  display: flex;
+  height: auto;
+  width: auto;
+  background-color: rgb(83, 77, 77);
+  right: 0px;
+  margin: 0px 10px 0px 0px;
+  justify-self: end;
+}
+
+.nav-link:link {
+  background-color: white;
+  color: black;
+  position: relative;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: black;
+}
+
+#sec1_slogan {
+  background-image: url(slogan1.jpg);
+  color: antiquewhite;
+  background-color: aquamarine;
+  height: 500px;
+}
+
+#sec2_about_us {
+  height: 500px;
+}
+
+#sec3_services {
+  height: 500px;
+}
+
+#sec2-sec3 {
+  background-image: url(about_us.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sec4_free_creativity {
+  background-color: pink;
+  height: 500px;
+}
+
+#sec5_client_comments {
+  background-image: url(slogan2.jpg);
+  background-color: yellow;
+  height: 500px;
+}
+
+#sec6-footer {
+  background-image: url(contact_us.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+#sec6_contact_us {
+  height: 500px;
+}
+
+#additional_info {
+  height: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */

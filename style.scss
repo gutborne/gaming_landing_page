@@ -1,0 +1,92 @@
+$std_sec_heigh: 500px;
+$std_sec_gap: 1vw;
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat'
+}
+
+body{
+    display: grid;
+    gap: $std_sec_gap;
+}
+
+
+#page_header{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    background-color: brown;
+    align-items: center;
+}
+#page-logo{
+    position: relative;
+    object-fit: fill;
+    aspect-ratio: 63/27;
+    width: auto;
+    height: clamp(80px, 7vw, 200px);
+    left: 0px;
+    // clamp(4vw, 26vw, 600px)
+    margin: 10px 0px 10px 10px;
+}
+#nav-section{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: rgb(83, 77, 77);
+    right: 0px;
+    margin: 0px 10px 0px 0px;
+    justify-self: end;
+}
+
+.nav-link:link{
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav-link:visited{
+    color: black;
+}
+
+
+#sec1_slogan{
+    background-image: url(slogan1.jpg);
+    color:antiquewhite;
+    background-color: aquamarine;
+    height: $std_sec_heigh;   
+}
+
+#sec2_about_us{
+    height: $std_sec_heigh;
+}
+#sec3_services{
+    height: $std_sec_heigh;
+}
+#sec2-sec3{
+    background-image: url(about_us.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sec4_free_creativity{
+    background-color: pink;
+    height: $std_sec_heigh;
+}
+#sec5_client_comments{
+    background-image: url(slogan2.jpg);
+    background-color: yellow;
+    height: $std_sec_heigh;
+}
+#sec6-footer{
+    background-image: url(contact_us.jpg);
+    background-size: cover;
+    height: 100%;
+}
+#sec6_contact_us{
+    height: $std_sec_heigh;
+}
+#additional_info{
+    height: $std_sec_heigh - 100px;
+}
