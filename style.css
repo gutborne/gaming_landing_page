@@ -12,6 +12,8 @@ body {
 
 .content {
   margin: 0px 1%;
+  font-size: clamp(10px, 1.5rem, 22px);
+  font-weight: 500;
 }
 
 .content-section {
@@ -32,9 +34,9 @@ body {
   position: relative;
   -o-object-fit: fill;
      object-fit: fill;
-  aspect-ratio: 63/27;
+  aspect-ratio: 73/27;
   width: auto;
-  height: clamp(70px, 10vh, 125px);
+  height: clamp(70px, 8.5vh, 125px);
   left: 0px;
   margin: 10px 0px 10px 10px;
 }
@@ -46,11 +48,12 @@ body {
   height: auto;
   width: auto;
   flex: 2;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .nav-link {
   font-size: clamp(1.2rem, 28px, 2vw);
+  font-weight: 700;
   color: black;
   position: relative;
   margin-right: 20px;
@@ -76,6 +79,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   background-image: url(slogan1.jpg);
+  background-repeat: no-repeat;
   color: white;
   background-color: aquamarine;
   height: 700px;
@@ -86,6 +90,9 @@ body {
   align-self: center;
   margin: 0px auto;
   font-size: clamp(25px, 1.8rem, 35px);
+  padding: 0.5%;
+  border-radius: 11%;
+  margin-top: 2%;
 }
 
 #cta_but:link {
@@ -113,6 +120,7 @@ body {
 
 .h_slogan {
   font-size: clamp(30px, 2.35rem, 40px);
+  font-weight: 600;
   margin: 1% calc(clamp(80px, 20vw, 30vw) - 10px) 3% calc(clamp(80px, 20vw, 30vw) - 10px);
 }
 
@@ -120,22 +128,53 @@ h3.h_slogan {
   font-size: calc(clamp(30px, 2rem, 40px) - 10px);
 }
 
+#sec2-sec3 {
+  background-image: url(about_us.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #sec2_about_us {
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#overlay_flex_about {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #about_title {
   font-size: clamp(30px, 2.35rem, 40px);
 }
 
-#sec3_services {
-  height: 500px;
+#products_title {
+  font-size: clamp(30px, 2.35rem, 40px);
 }
 
-#sec2-sec3 {
-  background-image: url(about_us.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.grid-values {
+  display: grid;
+  height: 275px;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  background: linear-gradient(135deg, #e9ab58, #d9480f);
+}
+
+.grid-values-item {
+  background: linear-gradient(135deg, #f0c27b, #4b1248);
+  border: 2px solid #e9ab58;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#sec3_services {
+  height: 1000px;
 }
 
 #sec4_free_creativity {
