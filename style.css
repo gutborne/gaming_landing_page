@@ -14,6 +14,10 @@ body {
   margin: 0px 1%;
 }
 
+.content-section {
+  color: white;
+}
+
 #page_header {
   display: flex;
   position: sticky;
@@ -74,7 +78,24 @@ body {
   background-image: url(slogan1.jpg);
   color: white;
   background-color: aquamarine;
-  height: 500px;
+  height: 700px;
+}
+
+#cta_but {
+  background-color: #000F9A;
+  align-self: center;
+  margin: 0px auto;
+  font-size: clamp(25px, 1.8rem, 35px);
+}
+
+#cta_but:link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+#cta_but:visited {
+  color: white;
 }
 
 .overlay {
@@ -85,10 +106,6 @@ body {
   margin: 0px;
 }
 
-.content-section {
-  color: white;
-}
-
 #overlay_flex_main {
   display: flex;
   flex-direction: column;
@@ -96,7 +113,7 @@ body {
 
 .h_slogan {
   font-size: clamp(30px, 2.35rem, 40px);
-  margin: 1% clamp(80px, 20vw, 30vw) 3% clamp(80px, 20vw, 30vw);
+  margin: 1% calc(clamp(80px, 20vw, 30vw) - 10px) 3% calc(clamp(80px, 20vw, 30vw) - 10px);
 }
 
 h3.h_slogan {
@@ -105,6 +122,10 @@ h3.h_slogan {
 
 #sec2_about_us {
   height: 500px;
+}
+
+#about_title {
+  font-size: clamp(30px, 2.35rem, 40px);
 }
 
 #sec3_services {

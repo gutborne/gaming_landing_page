@@ -1,5 +1,8 @@
 $std_sec_heigh: 500px;
 $std_sec_gap: 1vw;
+$horizontal_margin_main: calc(clamp(80px, 20vw, 30vw) - 10px);
+$title_font_size: clamp(30px, 2.35rem, 40px);
+
 *{
     box-sizing: border-box;
     font-family: 'Montserrat'
@@ -15,6 +18,13 @@ body{
 .content{
     margin: 0px 1%;   
 }
+
+.content-section{
+    color: white;
+}
+
+//#-----------HEADER-----------#
+
 
 #page_header{
     display: flex;
@@ -67,13 +77,32 @@ body{
 .nav-link:visited{
     color: black;
 }
+// #----------MAIN-------------#
+
 
 #sec1_slogan{
     object-fit: contain;
     background-image: url(slogan1.jpg);
     color: white;
     background-color: aquamarine;
-    height: $std_sec_heigh;
+    height: $std_sec_heigh*1.40;
+}
+
+#cta_but{
+    background-color: #000F9A;
+    align-self: center;
+    margin: 0px auto;
+    font-size: clamp(25px, 1.8rem, 35px)
+}
+
+#cta_but:link{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+#cta_but:visited{
+    color: white;
 }
 
 .overlay{
@@ -83,29 +112,27 @@ body{
     z-index: 2;
     margin: 0px;
 }
-.content-section{
-    color: white;
-}
-
-
-
 #overlay_flex_main{
     display: flex;
     flex-direction: column;
-
 }
 .h_slogan{
-    $horizontal_margin: clamp(80px, 20vw, 30vw);
     font-size: clamp(30px, 2.35rem, 40px);
-    margin: 1% $horizontal_margin 3% $horizontal_margin;
+    margin: 1% $horizontal_margin_main 3% $horizontal_margin_main;
 }
 h3.h_slogan{
     font-size: calc(clamp(30px, 2rem, 40px) - 10px);
 }
+// #---------ABOUT--------#
 
 #sec2_about_us{
     height: $std_sec_heigh;
 }
+#about_title{
+    font-size: $title_font_size;
+}
+
+
 #sec3_services{
     height: $std_sec_heigh;
 }
