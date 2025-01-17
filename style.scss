@@ -12,7 +12,7 @@ $text_weight: 500;
 
 body{
     display: grid;
-    margin: 0px 1%;
+    margin: 0px 0.8%;
     background-color: black;
     gap: $std_sec_gap;
 }
@@ -158,14 +158,18 @@ h3.h_slogan{
     font-size: $title_font_size;
 }
 
-#products_title{
-    font-size: $title_font_size;
+
+
+
+#values_text{
+    margin-bottom: -2vh;
+    font-size: calc($text_size*1.3);
 }
 
 .grid-values {
     display: grid;
     height: $std_sec_height*0.55;
-    margin-bottom: 20px;
+    margin:0px 0px 20px 0px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: clamp(60px, 9vw, 100px);
     padding: 10px;
@@ -174,37 +178,52 @@ h3.h_slogan{
 .grid-values-item {
     background: linear-gradient(180deg, rgba(0,5,52,0.75) 25%, rgba(0,15,154,0.75) 100%);
   border-radius: 5%;
+  height: auto;
   border: 3px solid white;
   padding: 20px;
   color: white;
   display: flex;
   justify-content: flex-start;
-
   font-size: 1.2em;
 }
+// #------------------------PRODUTOS----------------------#
   
+#products_title{
+    font-size: $title_font_size;
+}
 
 #sec3_products{
     height: auto;
 }
+
+// #---------------------------CREATIVITY-----------------------#
+
 #sec4_free_creativity{
     background-color: white;
     color: black;
     height: $std_sec_height;
 }
+
+
+// #-------------------COMMENTS------------------#
+
 #sec5_client_comments{
     background-image: url(slogan2.jpg);
-    background-color: yellow;
+    background-size: cover;
     height: $std_sec_height;
 }
+
+// #------------------------CONTATOS------------------#
 #sec6-contact{
-    background-image: url(contact_us.jpg);
+    background-image: url(contact_us.png);
     background-size: cover;
     height: 100%;
 }
 #sec6_contact_us{
     height: $std_sec_height;
 }
+
+//#------FOOTER------------#
 footer{
     display: flex;
     flex-direction: column;
