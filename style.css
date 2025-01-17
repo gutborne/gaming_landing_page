@@ -52,7 +52,7 @@ body {
 }
 
 .nav-link {
-  font-size: clamp(1.2rem, 28px, 2vw);
+  font-size: calc(clamp(30px, 2.35rem, 40px) - 20px);
   font-weight: 700;
   color: black;
   position: relative;
@@ -79,7 +79,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   background-image: url(slogan1.jpg);
-  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   background-color: aquamarine;
   height: 700px;
@@ -90,9 +90,13 @@ body {
   align-self: center;
   margin: 0px auto;
   font-size: clamp(25px, 1.8rem, 35px);
-  padding: 0.5%;
+  padding: 0.5% 2%;
   border-radius: 11%;
   margin-top: 2%;
+}
+
+#cta_but:hover {
+  background-color: #1b2edb;
 }
 
 #cta_but:link {
@@ -132,10 +136,11 @@ h3.h_slogan {
   background-image: url(about_us.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: auto;
 }
 
 #sec2_about_us {
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -158,27 +163,28 @@ h3.h_slogan {
   height: 275px;
   margin-bottom: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  gap: clamp(60px, 9vw, 100px);
   padding: 10px;
-  background: linear-gradient(135deg, #e9ab58, #d9480f);
 }
 
 .grid-values-item {
-  background: linear-gradient(135deg, #f0c27b, #4b1248);
-  border: 2px solid #e9ab58;
-  border-radius: 5px;
+  background: linear-gradient(180deg, rgba(0, 5, 52, 0.75) 25%, rgba(0, 15, 154, 0.75) 100%);
+  border-radius: 5%;
+  border: 3px solid white;
   padding: 20px;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
   font-size: 1.2em;
 }
 
-#sec3_services {
-  height: 1000px;
+#sec3_products {
+  height: auto;
 }
 
 #sec4_free_creativity {
-  background-color: pink;
+  background-color: white;
+  color: black;
   height: 500px;
 }
 
@@ -188,7 +194,7 @@ h3.h_slogan {
   height: 500px;
 }
 
-#sec6-footer {
+#sec6-contact {
   background-image: url(contact_us.jpg);
   background-size: cover;
   height: 100%;
@@ -198,6 +204,24 @@ h3.h_slogan {
   height: 500px;
 }
 
-#additional_info {
-  height: 400px;
+footer {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: auto;
+  background-color: white;
+}
+
+#logo_footer {
+  position: relative;
+  align-self: center;
+  -o-object-fit: fill;
+     object-fit: fill;
+  aspect-ratio: 73/27;
+  height: clamp(60px, 10vh, 100px);
+}
+
+#mail_address {
+  align-self: center;
+  margin: 0px 40vw 1% 40vw;
 }/*# sourceMappingURL=style.css.map */
