@@ -82,7 +82,7 @@ body {
   background-size: cover;
   color: white;
   background-color: aquamarine;
-  height: 700px;
+  height: 112vh;
 }
 
 #cta_but {
@@ -161,7 +161,7 @@ h3.h_slogan {
 
 .grid-values {
   display: grid;
-  height: 275px;
+  height: 44vh;
   margin: 0px 0px 20px 0px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: clamp(60px, 9vw, 100px);
@@ -191,13 +191,54 @@ h3.h_slogan {
 #sec4_free_creativity {
   background-color: white;
   color: black;
-  height: 500px;
+  height: 80vh;
 }
 
 #sec5_client_comments {
   background-image: url(slogan2.jpg);
   background-size: cover;
-  height: 500px;
+  height: 104vh;
+}
+
+#comments_title {
+  font-size: clamp(30px, 2.35rem, 40px);
+}
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin: 0px 1%;
+}
+
+.div-review {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-and-photo {
+  display: flex;
+  background-color: white;
+  color: black;
+  width: clamp(220px, 22vw, 400px);
+}
+
+.profile-pic {
+  aspect-ratio: 30/27;
+  width: auto;
+  height: clamp(28px, 6vh, 50px);
+}
+
+.name {
+  margin: 0px 10px;
+  align-self: center;
+}
+
+.review-desc {
+  height: clamp(2lh, 4em, 50px);
+  width: clamp(10rem, 70%, 100%);
+  background-color: #8C0635;
+  padding-top: 1vmin;
 }
 
 #sec6-contact {
@@ -207,7 +248,12 @@ h3.h_slogan {
 }
 
 #sec6_contact_us {
-  height: 500px;
+  height: 80vh;
+}
+
+#contact_title {
+  font-size: clamp(30px, 2.35rem, 40px);
+  margin-bottom: 1vh;
 }
 
 footer {
