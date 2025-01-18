@@ -4,7 +4,8 @@
 }
 
 body {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin: 0px 0.8%;
   background-color: black;
   gap: 1vw;
@@ -23,11 +24,13 @@ body {
 #page_header {
   display: flex;
   position: sticky;
+  top: 0px;
   width: 100%;
   height: auto;
   background-color: white;
   align-items: center;
   margin-top: 0px;
+  z-index: 1;
 }
 
 #page-logo {
@@ -161,37 +164,72 @@ h3.h_slogan {
 
 .grid-values {
   display: grid;
-  height: 44vh;
-  margin: 0px 0px 20px 0px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: clamp(60px, 9vw, 100px);
-  padding: 10px;
+  height: auto;
+  width: clamp(10vmin, 90%, 100%);
+  margin: 0px 1% 20px 1%;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  grid-auto-rows: minmax(auto, max-content);
+  gap: 1vmin;
+  padding: 0px;
+  align-self: center;
 }
 
 .grid-values-item {
   background: linear-gradient(180deg, rgba(0, 5, 52, 0.75) 25%, rgba(0, 15, 154, 0.75) 100%);
   border-radius: 5%;
-  height: auto;
-  border: 3px solid white;
+  height: 100%;
+  border: 0.4vmin solid white;
   padding: 20px;
   color: white;
   display: flex;
-  justify-content: flex-start;
-  font-size: 1.2em;
-}
-
-#products_title {
-  font-size: clamp(30px, 2.35rem, 40px);
+  justify-content: center;
+  font-size: clamp(10px, 2.8vmin, 20px);
+  font-weight: 500;
 }
 
 #sec3_products {
   height: auto;
 }
 
+#products_title {
+  font-size: clamp(30px, 2.35rem, 40px);
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  grid-auto-rows: 20%;
+  gap: 10px;
+  margin: 0px 1%;
+  align-self: center;
+  justify-items: center;
+}
+
+.product-name {
+  font-size: clamp(16px, 1.2em, 25px);
+}
+
+.product-slot {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgb(140, 6, 53) 0%, rgba(128, 6, 34, 0.75) 77%, rgb(227, 159, 159) 100%);
+}
+
+.product-icon {
+  aspect-ratio: 100/60;
+  width: auto;
+  height: clamp(50px, 10vmin, 150px);
+  margin: auto;
+}
+
 #sec4_free_creativity {
   background-color: white;
   color: black;
   height: 80vh;
+}
+
+#creativity_title {
+  font-size: clamp(30px, 2.35rem, 40px);
 }
 
 #sec5_client_comments {
@@ -244,7 +282,7 @@ h3.h_slogan {
 #sec6-contact {
   background-image: url(contact_us.png);
   background-size: cover;
-  height: 100%;
+  height: 64vh;
 }
 
 #sec6_contact_us {
@@ -253,7 +291,15 @@ h3.h_slogan {
 
 #contact_title {
   font-size: clamp(30px, 2.35rem, 40px);
-  margin-bottom: 1vh;
+  margin-bottom: 3vh;
+}
+
+#contato1 {
+  margin-bottom: 2vh;
+}
+
+.email-link {
+  color: white;
 }
 
 footer {
