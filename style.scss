@@ -212,25 +212,24 @@ h3.h_slogan{
 
 .product-name{
     font-size: clamp(16px, 1.2em, 25px);
+    color: black;
 }
 
 .product-slot{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, rgba(140,6,53,1) 0%, rgba(128,6,34,0.75) 77%, rgba(227,159,159,1) 100%);
+    background: linear-gradient(180deg, rgba(147,225,255,1) 0%, rgba(227,247,255,0.75) 77%, rgba(227,159,159,1) 100%);
     height: 100%;
     width: 100%;
 }
 .product-icon{
     width: auto;
-    //height: clamp(50px, 10vmin, 150px);
-    margin: auto;
-    margin: 10px;
+    margin: 30px;
 }
 .price-and-bag{
-    flex: 1;
     display: flex;
     justify-content: space-between;
+    height: clamp(20px, 10vmin, 100px);
     align-items: center;
     margin: 1vmin 0vmin 2vmin 0vmin;
 }
@@ -262,6 +261,9 @@ h3.h_slogan{
 #creativity_title{
     font-size: $title_font_size;
 }
+#intro-video{
+    margin-top: clamp(20px, 4vmin, 60px);
+}
 .video-review{
     height: auto;
     width: 100vmin;
@@ -274,7 +276,7 @@ h3.h_slogan{
 #sec5_client_comments{
     background-image: url(slogan2.jpg);
     background-size:cover;
-    height: $std_sec_height*1.3;
+    height: auto;
 }
 #comments_title{
     font-size: $title_font_size;
@@ -284,7 +286,8 @@ h3.h_slogan{
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    margin: $content_margin
+    margin: $content_margin;
+    padding-bottom: 2vmin;
 }
 .div-review{
     display: flex;
@@ -307,10 +310,11 @@ h3.h_slogan{
     align-self: center;
 }
 .review-desc{
-    height: clamp(2lh, 4em, 50px);
+    align-items: center;
+    height: auto;
     width: clamp(10rem,70%,100%);
     background-color: #8C0635;
-    padding-top: 1vmin;
+    padding: 1vmin;
     
 }
 
@@ -355,5 +359,7 @@ footer{
 #mail_address{
     align-self: center;
     font-size: calc($text_size - 10px);
+    height: auto;
+    width: clamp(100px, 40vmin, 200px);
     margin: 0px 40vw 1% 40vw;
 }
