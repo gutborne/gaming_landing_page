@@ -52,7 +52,7 @@ body{
     margin: 10px 0px 10px 10px;
 }
 
-#nav-section{
+/* #nav-section{
     background-color: white;
     position: relative;
     display: flex;
@@ -60,7 +60,39 @@ body{
     width: auto;
     flex: 2;
     justify-content: flex-end;
+} */
+
+#nav-section {
+    position: relative;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background: red;
+    color: black;
+    list-style: none;
+    padding-right: 4rem;
 }
+
+.hamburger {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    background: white;
+    cursor: pointer;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.showMenu {
+    transform: translateY(0);
+  }
 
 .nav-link{
     font-size: calc($title_font_size - 20px);
@@ -92,19 +124,20 @@ body{
     object-fit: contain;
     background-image: url(slogan1.jpg);
     background-size: cover;
+    background-clip: padding-box;
     color: white;
     background-color: aquamarine;
-    height: $std_sec_height*1.40;
+    height: auto;
 }
 
 #cta_but{
     background-color: #000F9A;
     align-self: center;
-    margin: 0px auto;
+    margin: 2% auto 5% auto;
     font-size: clamp(25px, 1.8rem, 35px);
     padding: 0.5% 2%;
     border-radius: 11%;
-    margin-top: 2%;
+    
 }
 
 #cta_but:hover{
