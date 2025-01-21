@@ -14,17 +14,19 @@
 <body>
     <header id="page_header">
         <img id="page-logo" src="LOGO.png" alt="gameverse logo">
-        <button class="hamburger">
-            <i class="menuIcon material-icons" >menu</i>
-            <i class="closeIcon material-icons">close</i>
-        </button>
-
         <nav id="nav-section">
-            <a class="nav-link" href="#sec2_about_us" target="_self">About Us</a>
-            <a class="nav-link" href="#sec3_products" target="_self">Products</a>
-            <a class="nav-link" href="#sec4_free_creativity" target="_self">Creativity</a>
-            <a class="nav-link" href="#sec5_client_comments" target="_self">Comments</a>
-            <a class="nav-link" href="#sec6_contact_us" target="_self">Contact us</a>
+            <section class="div-links">
+                <a class="nav-link" onclick="toggleMenu()" href="#sec2_about_us" target="_self">About Us</a>
+                <a class="nav-link" onclick="toggleMenu()" href="#sec3_products" target="_self">Products</a>
+                <a class="nav-link" onclick="toggleMenu()" href="#sec4_free_creativity" target="_self">Creativity</a>
+                <a class="nav-link" onclick="toggleMenu()" href="#sec5_client_comments" target="_self">Comments</a>
+                <a class="nav-link" onclick="toggleMenu()" href="#sec6_contact_us" target="_self">Contact us</a>
+            </section>
+           
+            <button class="hamburger" onclick="toggleMenu()">
+                <i class="menuIcon material-icons" >menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
         </nav>
     </header>
     <main class="content_section" id="sec1_slogan">
@@ -34,12 +36,10 @@
                 adventures, we bring you the latest games, reviews, news, and a vibrant community of 
                 gamers. Discover, connect, and play like never before!</h3>
             
-            <p class="description content" hidden>image1 description: Modern futuristic scene of God of War, Link, Solid Snake, Mario, Sonic, Lara
+            <figcaption class="description content" hidden>image1 description: Modern futuristic scene of God of War, Link, Solid Snake, Mario, Sonic, Lara
                 Croft, Cloud Strife, Naruto, Jinx, and Nathan Drake in dynamic poses against a cosmic
-                backdrop. Epic scale, heroic elements, radiant and </p>
-            <p class="description content" hidden>image2 description: An image depicting God of War, Link, Solid Snake, Mario, Sonic, Lara Croft, Cloud Strife,
-                Naruto, Jinx, Ratchet, and Nathan Drake in a cinematic style with warm autumn colors and
-                a soft, hazy background. The scene </p>
+                backdrop. Epic scale, heroic elements, radiant and </figcaption>
+            
             <a href="#sec4_free_creativity" target="_self" class="nav_link" id="cta_but">Discover</a>
         </figure>
     
@@ -201,12 +201,16 @@
             ever-expanding gaming landscape with confidence.
         </p>
         <p class="content" id="intro-video">
-            Below is a game review done by our team at Gameverse!.
+            Below is gameplay done by our team at Gameverse!.
         </p>
-        <video src="gameplayRJ.mp4" class="video-review" controls/>
+        <video src="video.mp4" class="video-review" alt="Gameplay video" controls="True"/>
+        
     </section>
     <section class="content-section" id="sec5_client_comments">
         <figure  class="overlay" id="overlay_flex_comments">
+            <figcaption class="description content" hidden>image2 description: An image depicting God of War, Link, Solid Snake, Mario, Sonic, Lara Croft, Cloud Strife,
+                Naruto, Jinx, Ratchet, and Nathan Drake in a cinematic style with warm autumn colors and
+                a soft, hazy background. The scene </figcaption>
             <h1 class="content" id="comments_title">Comments</h1>
             <section class="review-section">
 

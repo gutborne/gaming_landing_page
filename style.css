@@ -54,27 +54,31 @@ body {
     justify-content: flex-end;
 } */
 #nav-section {
+  display: flex;
   position: relative;
-  transform: translateY(-100%);
+  height: auto;
+  width: auto;
   transition: transform 0.2s;
-  top: 0;
-  right: 0;
+  flex: 2;
   z-index: 99;
-  background: red;
   color: black;
   list-style: none;
-  padding-right: 4rem;
+  justify-content: flex-end;
 }
 
 .hamburger {
-  position: fixed;
-  display: none;
+  position: relative;
+  display: flex;
   z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
+  transition: transform 0.2s;
+  padding: 1%;
   background: white;
   cursor: pointer;
+  aspect-ratio: 16/10;
+  height: auto;
+  width: clamp(20px, 30%, 110px);
+  justify-content: center;
+  align-items: center;
 }
 
 .closeIcon {
@@ -109,6 +113,52 @@ body {
   color: black;
 }
 
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 790px) {
+  /* Hide navigation links and show hamburger button */
+  #nav-section .div-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    padding: 10px 0;
+    gap: 15vmin;
+    transition: transform 0.2s;
+  }
+  .nav-link {
+    text-align: center;
+    box-shadow: px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .hamburger {
+    display: flex;
+  }
+  /* Show navigation links when menu is active */
+  #nav-section.active .div-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Toggle icons */
+  #nav-section .menuIcon {
+    display: flex;
+  }
+  #nav-section .closeIcon {
+    display: none;
+  }
+  #nav-section.active .menuIcon {
+    display: none;
+  }
+  #nav-section.active .closeIcon {
+    display: flex;
+  }
+}
 #sec1_slogan {
   -o-object-fit: contain;
      object-fit: contain;
@@ -173,6 +223,13 @@ h3.h_slogan {
   height: auto;
 }
 
+@media (max-width: 900px) {
+  #sec2-sec3 {
+    width: auto;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
 #sec2_about_us {
   height: auto;
   display: flex;
@@ -199,7 +256,6 @@ h3.h_slogan {
   width: clamp(10vmin, 90%, 100%);
   margin: 0px 1% 20px 1%;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-  grid-auto-rows: minmax(auto, max-content);
   gap: 1vmin;
   padding: 0px;
   align-self: center;
