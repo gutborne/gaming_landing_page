@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <title>Gameverse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header id="page_header">
-        <img id="page-logo" src="LOGO.png" alt="gameverse logo">
+        <img id="page-logo" src="assets/LOGO.png" alt="gameverse logo">
         <nav id="nav-section">
             <section class="div-links">
                 <a class="nav-link" onclick="toggleMenu()" href="#sec2_about_us" target="_self">About Us</a>
@@ -24,8 +24,8 @@
             </section>
            
             <button class="hamburger" onclick="toggleMenu()">
-                <i class="menuIcon material-icons" >menu</i>
-                <i class="closeIcon material-icons">close</i>
+                <i class="material-icons menuIcon " >menu</i>
+                <i class="material-icons closeIcon ">close</i>
             </button>
         </nav>
     </header>
@@ -75,120 +75,110 @@
             <section class="content-section" id="sec3_products">
                 <h1 class="content" id="products_title">Products</h1>
                 <ul class="grid-produtos">
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Game Reviews and Ratings
-                      </p>
-                      <img class="product-icon" src="produto1.png">
-                      <div class="price-and-bag">
-                        <p class="price">$19.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Gaming News
-                      </p>
-                      <img class="product-icon" src="produto2.png">
-                      <div class="price-and-bag">
-                        <p class="price">$9.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name" id="recommend">
-                        Game Recommendations
-                      </p>
-                      <img class="product-icon" src="produto3.png">
-                      <div class="price-and-bag">
-                        <p class="price">$14.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Community Forums
-                      </p>
-                      <img class="product-icon" src="produto4.png">
-                      <div class="price-and-bag">
-                        <p class="price">$0.00</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Gaming Tutorials and Tips
-                      </p>
-                      <img class="product-icon" src="produto5.png">
-                      <div class="price-and-bag">
-                        <p class="price">$4.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Exclusive Content
-                      </p>
-                      <img class="product-icon" src="produto6.png">
-                      <div class="price-and-bag">
-                        <p class="price">$29.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Leaderboards and Challenges
-                      </p>
-                      <img class="product-icon" src="produto7.png">
-                      <div class="price-and-bag">
-                        <p class="price">$3.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Marketplace
-                      </p>
-                      <img class="product-icon" src="produto8.png">
-                      <div class="price-and-bag">
-                        <p class="price">$49.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Streaming Hub
-                      </p>
-                      <img class="product-icon" src="produto9.png">
-                      <div class="price-and-bag">
-                        <p class="price">$7.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  
-                    <section class="product-slot">
-                      <p class="content product-name">
-                        Game Development Resources
-                      </p>
-                      <img class="product-icon" src="produto10.png">
-                      <div class="price-and-bag">
-                        <p class="price">$19.99</p>
-                        <img class="bag" src="bag-icon.png" alt="Add to bag">
-                      </div>
-                    </section>
-                  </ul>
-                  
-                  
-                  
-            </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Game Reviews and Ratings
+                    </p>
+                    <img class="product-icon" src="assets/produto1.png">
+                    <div class="price-and-bag">
+                      <p class="price">$19.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Gaming News
+                    </p>
+                    <img class="product-icon" src="assets/produto2.png">
+                    <div class="price-and-bag">
+                      <p class="price">$9.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name" id="recommend">
+                      Game Recommendations
+                    </p>
+                    <img class="product-icon" src="assets/produto3.png">
+                    <div class="price-and-bag">
+                      <p class="price">$14.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Community Forums
+                    </p>
+                    <img class="product-icon" src="assets/produto4.png">
+                    <div class="price-and-bag">
+                      <p class="price">$0.00</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Gaming Tutorials and Tips
+                    </p>
+                    <img class="product-icon" src="assets/produto5.png">
+                    <div class="price-and-bag">
+                      <p class="price">$4.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Exclusive Content
+                    </p>
+                    <img class="product-icon" src="assets/produto6.png">
+                    <div class="price-and-bag">
+                      <p class="price">$29.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Leaderboards and Challenges
+                    </p>
+                    <img class="product-icon" src="assets/produto7.png">
+                    <div class="price-and-bag">
+                      <p class="price">$3.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Marketplace
+                    </p>
+                    <img class="product-icon" src="assets/produto8.png">
+                    <div class="price-and-bag">
+                      <p class="price">$49.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Streaming Hub
+                    </p>
+                    <img class="product-icon" src="assets/produto9.png">
+                    <div class="price-and-bag">
+                      <p class="price">$7.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                  <section class="product-slot">
+                    <p class="content product-name">
+                      Game Development Resources
+                    </p>
+                    <img class="product-icon" src="assets/produto10.png">
+                    <div class="price-and-bag">
+                      <p class="price">$19.99</p>
+                      <img class="bag" src="assets/bag-icon.png" alt="Add to bag">
+                    </div>
+                  </section>
+                </ul>
+              </section>
+            </figure>
+          </section>
         </figure>
     </section>
     <section class="content-section" id="sec4_free_creativity">
@@ -203,7 +193,7 @@
         <p class="content" id="intro-video">
             Below is gameplay done by our team at Gameverse!.
         </p>
-        <video src="video.mp4" class="video-review" alt="Gameplay video" controls="True"/>
+        <video src="assets/video.mp4" class="video-review" alt="Gameplay video" controls="True"/>
         
     </section>
     <section class="content-section" id="sec5_client_comments">
@@ -216,8 +206,9 @@
 
                 <div class="div-review">
                     <div class="name-and-photo">
-                        <img src="Profile Avatar.png" class="profile-pic">
+                        <img src="assets/Profile Avatar.png" class="profile-pic">
                         <h3 class="name"> Tigrinho da Silva</h3>
+
                     </div>
                     <strong class="review-desc">
                         "Gameverse has everything I need in one place! From reviews to forums, it’s my go-to hub for all things gaming."
@@ -226,7 +217,7 @@
 
                 <div class="div-review">
                     <div class="name-and-photo">
-                        <img src="Profile Avatar.png" class="profile-pic">
+                        <img src="assets/Profile Avatar.png" class="profile-pic">
                         <h3 class="name">Pedreiro de Luva</h3>
                     </div>
                     <strong class="review-desc">
@@ -236,7 +227,7 @@
 
                 <div class="div-review">
                     <div class="name-and-photo">
-                        <img src="Profile Avatar.png" class="profile-pic">
+                        <img src="assets/Profile Avatar.png" class="profile-pic">
                         <h3 class="name">csalles</h3>
                     </div>
 
@@ -247,7 +238,7 @@
 
                 <div class="div-review">
                     <div class="name-and-photo">
-                        <img src="Profile Avatar.png" class="profile-pic">
+                        <img src="assets/Profile Avatar.png" class="profile-pic">
                         <h3 class="name">Natalino Açucarado</h3>
                     </div>
 
@@ -258,7 +249,7 @@
 
                 <div class="div-review">
                     <div class="name-and-photo">
-                        <img src="Profile Avatar.png" class="profile-pic">
+                        <img src="assets/Profile Avatar.png" class="profile-pic">
                         <h3 class="name">Mução</h3>
                     </div>
 
@@ -269,7 +260,7 @@
 
                 <div class="div-review">
                     <div class="name-and-photo">
-                        <img src="Profile Avatar.png" class="profile-pic">
+                        <img src="assets/Profile Avatar.png" class="profile-pic">
                         <h3 class="name">Tia do RU</h3>
                     </div>
 
@@ -302,7 +293,7 @@
         </figure>
     </div>
     <footer> 
-        <img src="LOGO.png" id="logo_footer">
+        <img src="assets/LOGO.png" id="logo_footer">
         <address id="mail_address">
         Mailing Address:  
         Gameverse HQ  
@@ -311,6 +302,6 @@
         Country
         </address>
     </footer>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
